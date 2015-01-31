@@ -1,17 +1,21 @@
 {
-    "listen_address": "0.0.0.0",
+    "listen_address": "{OPENSHIFT_NODEJS_IP}",
 
-    "listen_port": 8080,
+    "listen_port": "{OPENSHIFT_NODEJS_PORT}",
 
-    "force_https": true,
+    "target_google": {
+        "host": "www",
+        "domain": "google.com"
+    },
 
-    "backend_https": false,
+    "force_https": true
+    "backend_https": true,
 
     "server_header": "AirGoo",
 
-    "force_cached_time": 1800,
+    "force_cached_time": 0,
 
-    "gzip_r4": false,
+    "gzip_r4": true,
 
     "logging": true,
 
