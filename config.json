@@ -4,8 +4,8 @@
     "listen_port": "{OPENSHIFT_NODEJS_PORT}",
 
     "target_google": {
-        "host": "cn",
-        "domain": "wsj.com"
+        "host": "docs",
+        "domain": "google.com"
     },
 
     "force_https": true,
@@ -27,10 +27,11 @@
     "max_transmit_size": 10485760,
 
     "ext_domains": [
-        ".wsj.com",
+        ".google.com",
         ".gstatic.com",
         ".googleapis.com",
         ".googleusercontent.com"
+        ".googleadservices.com"
         
     ]
 }
